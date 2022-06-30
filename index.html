@@ -113,6 +113,8 @@
               <div class="grid-item grid-item--width3 grid-item--height4 grid-bg grid-width3-bg WebDesign"></div>
               <div class="grid-item grid-item--width2 grid-item--height3 grid-bg grid-width2-bg Interaction"></div>
               <div class="grid-item grid-item--width2 grid-item--height3 grid-bg grid-width1-bg Application"></div>
+
+              
               <div class="grid-item grid-item--width1 grid-item--height4 grid-bg grid-width4-bg GraphicDesign"></div>
               <div class="grid-item grid-item--width5 grid-item--height4 grid-bg grid-width5-bg Branding"></div>
               <div class="grid-item grid-item--width1 grid-item--height1 grid-bg grid-width6-bg Photography"></div>
@@ -349,11 +351,18 @@
     </footer>
 
     <script src="./bootstrap-4.6.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/masonry.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="index.js"></script>
     <script>
 
+    $('.grid').masonry({
+      // options
+      itemSelector: '.grid-item',
+      columnWidth: 20
+    });
       //navbar onscroll fixed
 
       $(window).scroll(function(){
@@ -403,24 +412,6 @@
 
     </script>
 
-    <!-- <script>
-
-      const filterMenu = document.querySelectorAll('.category-list-item');
-      const serviceClass = document.querySelectorAll('.grid-item');
-      
-      for(var i = 0; i < filterMenu.length ; i++){
-        
-        const menuItems = filterMenu[i].innerHTML;
-          menuItems.addEventListener('click',function(){
-            console.log(serviceClass.currentTarget.contains)
-            
-        })
-
-      
-      }
-
-
-    </script> -->
 
     <script>
       $(".scroll-next").click(function() {

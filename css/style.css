@@ -316,17 +316,16 @@ main{
     border-radius: 5px;
   }
   
-  .grid-item--width2 { width:  48%; }
-  .grid-item--width3 { width:  52%; border-right: 10px solid #FFF;}
+  .grid-item--width2 { width:  46%; }
+  .grid-item--width3 { width:  52%; }
   .grid-item--width1 { width: 20%;}
-  .grid-item--width5 { width: 60%;}
+  .grid-item--width5 { width: 56%;}
   .grid-width3-bg  { background-image: url('../images/grid-width3img.jpg');}
   .grid-bg{
     background-size: cover;
     background-position: center;
     margin-top: 3px;
-    border-right: 11px solid #FFF;
-    border-bottom: 3px solid #FFF;
+
 }
   .grid-width2-bg{background-image: url('../images/gridwidth2Img.jpg');}
   .grid-width1-bg{background-image: url('../images/grid1Img.jpg');}
